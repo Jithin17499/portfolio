@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* INTRO */
+
+.intro {
+  height: 100vh;
+}
+
+.intro video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.mepara p {
+  position: absolute;
+  top: 53%;
+  padding-left: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #fff;
+  animation-name: paraAnim;
+  animation-duration: 6s;
+}
+
+@keyframes paraAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.mepara h1 {
+  animation-name: paraAnim;
+  animation-duration: 6s;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: #fff;
+}
+
+.process {
+  padding: 50px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+}
+
+/* ICON CLASS */
+  
+.iconclassA {
+  position: fixed;
+  bottom: 2%;
+ left: 1%;
+}
+
+.iconclassA a {
+  font-weight: 200;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.iconclassA a:visited {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(202, 202, 202);
+  font-family: "Poppins", sans-serif;
+}
+
+.iconclassA a:hover {
+  opacity: 100%;
+  color: #000;
+}
+
+/* ICON CLASS END */
+/* Progress bar */
+
+.progressBar {
+  position: fixed;
+  z-index: 999;
+  height: 5px;
+  background: -webkit-linear-gradient(0deg, rgb(51, 51, 51), rgb(187, 187, 187));
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* SCROLL INDICATOR */
+
+.icon-scroll,
+.icon-scroll:before {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+}
+.icon-scroll {
+  width: 30px;
+  opacity: 50%;
+  height: 60px;
+  box-shadow: inset 0 0 0 1px rgb(255, 255, 255);
+  border-radius: 25px;
+}
+.icon-scroll:before {
+  content: "";
+  margin-right: 10px;
+  margin-bottom: 43px;
+  width: 7px;
+  height: 7px;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+@-moz-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+@-o-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+/* FAQ */
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+}
+
+section {
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: rgb(0, 0, 0);
+}
+
+section h1 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+section h4 {
+  text-align: center;
+  font-size: 30px;
+}
+
+section h5 {
+  text-align: center;
+  color: #000;
+  font-size: 40px;
+}
+
+.faq-list li {
+  margin: 30px 0;
+  border: 1px solid rgb(205, 205, 205);
+  padding: 27px 30px;
+  margin: 0px auto 30px;
+  text-align: left;
+  width: 550px;
+}
+
+.faq-heading {
+  position: relative;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0;
+}
+
+.faq-list a {
+  position: relative;
+}
+
+.faq-list a span {
+  position: absolute;
+  display: none;
+}
+.faq-list a:hover span {
+  display: block;
+  right: 60%;
+  top: 20%;
+}
+
+.faq-heading:hover {
+  color: var(--theme-color);
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.art-box svg {
+  width: 100%;
+}
+.row {
+  display: flex;
+}
+.row .col {
+  flex-basis: 50%;
+}
+.read {
+  color: rgb(2, 2, 2);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 25px;
+}
+
+/* DOWNLOAD CV */
+
+.downloadcv {
+  height: 20vh;
+  width: 100vw;
+}
+
+.resumebutton {
+  /* background: rgb(255, 255, 255); */
+   font-weight: bold;
+   padding: 50px;
+   justify-content: center;
+   align-items: center;
+   letter-spacing: 0.5rem;
+   text-align: left;
+   display: flex;
+ }
+
+ .resumebutton1 {
+  /* background: rgb(255, 255, 255); */
+   font-weight: bold;
+   justify-content: center;
+   align-items: center;
+   letter-spacing: 0.5rem;
+   text-align: left;
+   display: flex;
+ }
+
+
+/* TITLE BUTTON ANIMATION  */
+
+
+.effect1 {
+  color: #222;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 24px;
+  position: relative;
+  padding: 10px 50px 10px 20px;
+
+  -webkit-transition: all 0.3s;
+
+  -o-transition: all 0.3s;
+
+  transition: all 0.3s;
+
+  -webkit-transform: scale(1);
+
+      -ms-transform: scale(1);
+
+          transform: scale(1); /*change scale(3) to scale(1)*/
+}
+
+.effect1 .bg {
+  background: #222;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -1px;
+  z-index: -1;
+
+  -webkit-transition: all 0.3s;
+
+  -o-transition: all 0.3s;
+
+  transition: all 0.3s;
+}
+
+.effect1:hover {
+  padding-right: 20px;
+  color: #fff;
+}
+
+.effect1:hover .bg {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.effect1 .bg:before, .effect1 .bg:after {
+  content: '';
+  height: 2px;
+  width: 10px;
+  background: #222;
+  position: absolute;
+  right: -2px;      
+  -webkit-transition: all 0.3s;      
+  -o-transition: all 0.3s;      
+  transition: all 0.3s;
+}
+
+.effect1 .bg:before {
+  bottom: 3px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.effect1 .bg:after{
+  top: 3px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.effect1:hover .bg:before,
+.effect1:hover .bg:after{
+  right: 0;
+}
+
+.effect1:hover .bg:before{
+  bottom: 6px;
+}
+
+.effect1:hover .bg:after{
+  top: 6px;
+}
+
+
+/* bg image */
+
+.bgimageabout{
+  width: 100vw;
+  object-fit: contain;
+}
+
+.workshowcasemain {
+background-color: #000;
+}
+.workshowcasemain video {
+  filter: grayscale(70%);
+  opacity: 20%;
+}

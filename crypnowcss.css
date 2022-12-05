@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.workheading {
+  text-align: center;
+  padding: 45px;
+  font-size: 72px;
+  font-weight: 900;
+  background-color: #fff;
+}
+
+.workshowcasemain video {
+  width: 100%;
+  object-fit: cover;
+  margin: 5px;
+  background-color: #fff;
+}
+
+.workdetails {
+  padding: 50px;
+}
+
+.details {
+  position: absolute;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.team {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.brief {
+  position: relative;
+  font-size: 15px;
+  left: 51%;
+  width: 35vw;
+}
+
+.credits {
+  padding: 50px;
+}
+
+.anchorlinks {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+}
+
+.previouswork a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nextwork a {
+  position: absolute;
+  right: 50px;
+  text-decoration: none;
+  text-align: right;
+  color: #000;
+}
+
+/* ICON CLASS */
+
+.iconclassA {
+  padding: 50px;
+}
+
+.iconclassA a {
+  font-weight: 200;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.iconclassA a:visited {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(61, 61, 61);
+  font-family: "Poppins", sans-serif;
+}
+
+.iconclassA a:hover {
+  opacity: 100%;
+  color: #000;
+}
+
+/* ICON CLASS END */
+/* Progress bar */
+
+.progressBar {
+  position: fixed;
+  z-index: 999;
+  height: 5px;
+  background: -webkit-linear-gradient(
+    0deg,
+    rgb(155, 155, 155),
+    rgb(107, 107, 107)
+  );
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* SCROLL INDICATOR */
+
+.icon-scroll,
+.icon-scroll:before {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+}
+.icon-scroll {
+  width: 30px;
+  opacity: 50%;
+  height: 60px;
+  box-shadow: inset 0 0 0 1px rgb(255, 255, 255);
+  border-radius: 25px;
+}
+.icon-scroll:before {
+  content: "";
+  margin-right: 10px;
+  margin-bottom: 43px;
+  width: 7px;
+  height: 7px;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+@-moz-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+@-o-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+/* GALLERY */
+
+.gallery {
+  padding: 20px;
+  color: #345;
+  margin-top: 100px;
+}
+
+ul1 {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+ul2 {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+ul3 {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+ul3::after {
+  content: "";
+  height: 0;
+  flex-grow: 10;
+}
+
+li {
+  padding: 10px;
+  width: 50%;
+  height: 55vh;
+  align-self: center;
+  flex-grow: 1;
+}
+
+li img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+li:hover h5 {
+  opacity: 70;
+  transition: .5s ease;
+  font-size: 16px;
+}
+
+li:hover h6 {
+  opacity: 70;
+  transition: .5s ease;
+  font-size: 16px;
+}
+
+
+h5 {
+  opacity: 0;
+  font-size: 14px;
+  position: absolute;
+  font-weight: 400;
+  padding: 10px;
+  color: #fff;
+}
+
+h6 {
+  opacity: 0;
+  font-size: 14px;
+  position: absolute;
+  font-weight: 400;
+  padding: 10px;
+  color: rgb(124, 124, 124);
+}
+
+.brief1 {
+  text-align: center;
+  padding: 45px;
+  padding-right: 30vw;
+  padding-left: 30vw;
+  font-size: 15px;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  li {
+    height: 30vh;
+  }
+}
+
+@media (max-height: 480px) {
+
+  li {
+    height: 80vh;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  ul1 {
+    flex-direction: row;
+  }
+  ul2 {
+    flex-direction: row;
+  }
+  
+  ul3 {
+    flex-direction: row;
+  }
+
+  li {
+    height: auto;
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+
+}
+
+/* Logo meaning */
+
+.logoderive img{
+  object-fit: contain;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+/* Dees logo meaning */
+
+.logoderive video{
+  object-fit: contain;
+  display: block;
+margin: 0 auto;
+padding-top: 40px;
+  width: 70vw;
+}
+
+.workshowcasemain img{
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.moodboard img{
+  margin-top: 20vh;
+  object-fit: contain;
+  width: 100vw;
+  height: 80vh;
+}

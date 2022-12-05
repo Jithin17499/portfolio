@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+
+.iconclass {
+  position: fixed;
+  bottom: 3%;
+  left: 1%;
+}
+
+.fab {
+  color: rgb(156, 156, 156);
+  padding-left: 12px;
+}
+
+.fab:hover {
+  opacity: 100%;
+  color: #000;
+}
+
+
+.is-transitioning {
+    pointer-events: none;
+    cursor: progress;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1140px;
+  color: rgb(197, 14, 14);
+}
+
+.container p.typed-text {
+  font-weight: 1100;
+  color: #000;
+}
+
+.container {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: 1000;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  overflow: hidden;
+}
+
+.container p span.typed-text {
+  padding-inline: 20px;
+  background-color: rgb(0, 0, 0);
+  font-weight: 1100;
+  color: rgb(255, 255, 255);
+}
+
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+/* BREAK*/
+
+.slide {
+  scroll-snap-align: start;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.innerwrapper {
+  display: flex;
+  flex-direction: row;
+  transform: rotate(90deg) translatey(-100vh);
+  transform-origin: top left;
+  width: 500vw;
+}
+.worktitletext {
+ /* background: rgb(255, 255, 255); */
+  font-size: 6rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5rem;
+  text-align: left;
+  display: flex;
+}
+.abouttitletext {
+ /* background: rgb(255, 255, 255); */
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5rem;
+  text-align: left;
+  display: flex;
+}
+.contacttitletext {
+ /* background: rgb(255, 255, 255); */
+  color: #222;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+}
+
+.thankyoutitletext {
+ /* background: rgb(255, 255, 255); */
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+}
+
+.outer-wrapper {
+  /* width: 100vw; */
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform-origin: top left;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  
+  scroll-snap-type: y mandatory;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* BREAK*/
+
+#outerCircleText div div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+/* DRAW EFFECT */
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+#block {
+  height: 100vh;
+  width:max-content;
+  position: sticky;
+  top: 0;
+  right: 0;
+  align-items: center;
+  margin: auto;
+  display: flex;
+ /* background: rgb(255, 255, 255); */
+}
+
+canvas {
+  position: absolute;
+  mix-blend-mode: lighten;
+}
+
+h1{
+  font-size: 500;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* hover Animation titles */
+
+.effect1 {
+  color: #222;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 24px;
+  position: relative;
+  padding: 10px 50px 10px 20px;
+
+  -webkit-transition: all 0.3s;
+
+  -o-transition: all 0.3s;
+
+  transition: all 0.3s;
+
+  -webkit-transform: scale(1);
+
+      -ms-transform: scale(1);
+
+          transform: scale(1); /*change scale(3) to scale(1)*/
+}
+
+.effect1 .bg {
+  background: #222;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -1px;
+  z-index: -1;
+
+  -webkit-transition: all 0.3s;
+
+  -o-transition: all 0.3s;
+
+  transition: all 0.3s;
+}
+
+.effect1:hover {
+  padding-right: 20px;
+  color: #fff;
+}
+
+.effect1:hover .bg {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.effect1 .bg:before, .effect1 .bg:after {
+  content: '';
+  height: 2px;
+  width: 10px;
+  background: #222;
+  position: absolute;
+  right: -2px;      
+  -webkit-transition: all 0.3s;      
+  -o-transition: all 0.3s;      
+  transition: all 0.3s;
+}
+
+.effect1 .bg:before {
+  bottom: 3px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.effect1 .bg:after{
+  top: 3px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.effect1:hover .bg:before,
+.effect1:hover .bg:after{
+  right: 0;
+}
+
+.effect1:hover .bg:before{
+  bottom: 6px;
+}
+
+.effect1:hover .bg:after{
+  top: 6px;
+}
+
+/* SCROLL INDICATOR */
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  right: 5%;
+  bottom: 5%
+}
+.icon-scroll {
+  width: 30px;
+  height: 60px;
+  box-shadow: inset 0 0 0 1px rgb(146, 146, 146);
+  border-radius: 25px;
+}
+.icon-scroll:before {
+  content: '';
+  margin-right: 8.5px;
+  margin-bottom: 43px;
+  width: 7px;
+  height: 7px;
+  background: rgb(148, 148, 148);
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+@-moz-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+@-o-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+/* contact form */
+
+h4{
+  letter-spacing: .5rem;
+  font-size: 24px;
+}
+
+.contactform {
+  letter-spacing: 0px;
+  max-width: 700px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid rgba(133, 133, 133, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .5rem;
+  color: rgb(2, 1, 1);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+  background-color: #fff;
+}
+button[type="submit"]:hover {
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+}
+
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(148, 148, 148);
+  font-size: small;
+  text-align: center;
+  font-family:'Poppins', sans-serif;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(148, 148, 148);
+  font-size: small;
+  text-align: center;
+  font-family:'Poppins', sans-serif;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(148, 148, 148);
+  font-size: small;
+  text-align: center;
+  font-family:'Poppins', sans-serif;
+  opacity: 1; /* Firefox */
+}
+
+
+/* BACKGROUND INTERACTION */
+
+.backgroundimage{
+  z-index: 0;
+  height: 100vh;
+  background-image: url('images/BG_01-01-01.png');
+  background-size: fill;
+  transform: rotate(90deg) translatey(-100vh);
+  transform-origin: top left;
+  display: flex;
+  flex-direction: row;
+  width: 600vw;
+}
+
+
+/* MAIL COPUY */
+
+
+.click-to-copy-container {
+  position: relative;
+}
+
+.phoneandmail button.click-to-copy, a.click-to-copy-fallback {
+  background: #ffffff;
+  border: none;
+  box-shadow: none;
+  padding: 1rem;
+  border-radius: .25rem;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: #000000;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+}
+
+.phoneandmail button.click-to-copy:hover, a.click-to-copy-fallback hover {
+  opacity: .8;
+}
+
+.phoneandmail button.click-to-copy + span {
+  /* We make the span hidden by default. In this case, using display: none; isn't an issue from an accessibility standpoint, since we don't want screen readers to pick this up unless the user clicks on the button */
+  display: none;
+  /* From here on, just styling purposes 👇🏻 */
+  margin-left: 1rem;
+  background: #DADADA;
+  padding: .5rem;
+  border-radius: .2rem;
+  position: absolute;
+  top: .75rem;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  font-weight: 600;
+  color: rgb(146, 146, 146);
+}
+
+/* Styles for the tooltip arrow */
+.phoneandmail button.click-to-copy + span:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(218, 218, 218, 0);
+	border-right-color: #DADADA;
+	border-width: 6px;
+	margin-top: -6px;
+}
+
+/* When the click event is fired, and the .is-copied class is added to the button, show the tooltip */
+.phoneandmail button.click-to-copy.is-copied + span {
+  display: initial;
+}
+
+/* Hide the fallback version on desktop resolutions */
+a.click-to-copy-fallback {
+  display: none;
+}
+
+/* Toggle fallback version for mobile, where the native email apps are way more used and mailto link become way more relevant. I'm using an iPad portrait resolution as the breakpoint, but feel free to play with it! */
+@media screen and (max-width: 768px) {
+  /* Hide the desktop button */
+  .phoneandmail button.click-to-copy {
+    display: none;
+  }
+  
+  /* Show its replacement */
+  a.click-to-copy-fallback {
+    display: block;
+  }
+}
+
+.phoneandmail{
+  flex: auto;
+  color: #222;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  margin-top: 35vh;
+}
+
+.phoneandmail h1 {
+  font-size: 5rem;
+  font-weight: 1800;
+  padding-bottom: 100px;
+}
+
+.phoneandmail h2 {
+  font-size: smaller;
+  font-weight: 200;
+  color: rgb(163, 163, 163);
+}
+
+.phoneandmail button {
+  font-size: 2rem;
+  font-weight: 300;
+}
